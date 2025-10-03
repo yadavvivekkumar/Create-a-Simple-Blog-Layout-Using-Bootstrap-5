@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechBlog - Web Development Insights</title>
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-code me-2"></i>TechBlog
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section bg-light py-5">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold text-primary mb-4">Welcome to TechBlog</h1>
+                    <p class="lead text-muted mb-4">Discover the latest insights, tutorials, and best practices in web development, design, and technology.</p>
+                    <a href="#blog" class="btn btn-primary btn-lg">Explore Posts</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section id="blog" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold text-dark">Latest Blog Posts</h2>
+                    <p class="text-muted">Stay updated with the latest trends and techniques</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Blog Post 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 blog-card">
+                        <div class="card-img-placeholder bg-primary d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <i class="fab fa-bootstrap text-white" style="font-size: 3rem;"></i>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge bg-primary">Web Development</span>
+                            </div>
+                            <h5 class="card-title fw-bold">Getting Started with Bootstrap 5</h5>
+                            <p class="card-text text-muted flex-grow-1">Learn the fundamentals of Bootstrap 5 and how to create responsive layouts with ease. This comprehensive guide covers the new features and improvements.</p>
+                            <div class="blog-meta small text-muted mb-3">
+                                <span><i class="fas fa-user me-1"></i>Sarah Johnson</span>
+                                <span class="ms-3"><i class="fas fa-calendar me-1"></i>October 1, 2025</span>
+                            </div>
+                            <div class="blog-content collapse" id="content1">
+                                <p class="text-muted">Bootstrap 5 introduces significant improvements including the removal of jQuery dependency, enhanced grid system, and new utility classes. This guide will walk you through setting up your first Bootstrap 5 project and using its powerful components to build modern, responsive websites.</p>
+                            </div>
+                            <button class="btn btn-outline-primary read-more-btn" data-bs-toggle="collapse" data-bs-target="#content1">
+                                Read More <i class="fas fa-arrow-right ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 blog-card">
+                        <div class="card-img-placeholder bg-success d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <i class="fas fa-mobile-alt text-white" style="font-size: 3rem;"></i>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge bg-success">Design</span>
+                            </div>
+                            <h5 class="card-title fw-bold">Responsive Design Best Practices</h5>
+                            <p class="card-text text-muted flex-grow-1">Discover the essential principles of responsive web design and how to create websites that work perfectly on all devices and screen sizes.</p>
+                            <div class="blog-meta small text-muted mb-3">
+                                <span><i class="fas fa-user me-1"></i>Mike Chen</span>
+                                <span class="ms-3"><i class="fas fa-calendar me-1"></i>September 28, 2025</span>
+                            </div>
+                            <div class="blog-content collapse" id="content2">
+                                <p class="text-muted">Responsive design is no longer optional in today's multi-device world. Learn about mobile-first approach, flexible layouts, media queries, and testing strategies that ensure your websites provide optimal user experience across all devices.</p>
+                            </div>
+                            <button class="btn btn-outline-success read-more-btn" data-bs-toggle="collapse" data-bs-target="#content2">
+                                Read More <i class="fas fa-arrow-right ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 blog-card">
+                        <div class="card-img-placeholder bg-info d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <i class="fab fa-css3-alt text-white" style="font-size: 3rem;"></i>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge bg-info">CSS</span>
+                            </div>
+                            <h5 class="card-title fw-bold">CSS Grid vs Flexbox: When to Use What</h5>
+                            <p class="card-text text-muted flex-grow-1">A detailed comparison of CSS Grid and Flexbox, helping you understand when to use each layout method for optimal results.</p>
+                            <div class="blog-meta small text-muted mb-3">
+                                <span><i class="fas fa-user me-1"></i>Emma Rodriguez</span>
+                                <span class="ms-3"><i class="fas fa-calendar me-1"></i>September 25, 2025</span>
+                            </div>
+                            <div class="blog-content collapse" id="content3">
+                                <p class="text-muted">Both CSS Grid and Flexbox are powerful layout systems, but they serve different purposes. This guide explains the strengths of each, provides practical examples, and helps you choose the right tool for your specific layout challenges.</p>
+                            </div>
+                            <button class="btn btn-outline-info read-more-btn" data-bs-toggle="collapse" data-bs-target="#content3">
+                                Read More <i class="fas fa-arrow-right ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 blog-card">
+                        <div class="card-img-placeholder bg-warning d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <i class="fab fa-js-square text-white" style="font-size: 3rem;"></i>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge bg-warning text-dark">JavaScript</span>
+                            </div>
+                            <h5 class="card-title fw-bold">Modern JavaScript ES6+ Features</h5>
+                            <p class="card-text text-muted flex-grow-1">Explore the powerful features introduced in ES6 and beyond, including arrow functions, destructuring, async/await, and more.</p>
+                            <div class="blog-meta small text-muted mb-3">
+                                <span><i class="fas fa-user me-1"></i>David Kim</span>
+                                <span class="ms-3"><i class="fas fa-calendar me-1"></i>September 22, 2025</span>
+                            </div>
+                            <div class="blog-content collapse" id="content4">
+                                <p class="text-muted">Modern JavaScript has evolved significantly with ES6+ features that make code more readable, efficient, and maintainable. Learn about the most important features every developer should master in 2025.</p>
+                            </div>
+                            <button class="btn btn-outline-warning read-more-btn" data-bs-toggle="collapse" data-bs-target="#content4">
+                                Read More <i class="fas fa-arrow-right ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 blog-card">
+                        <div class="card-img-placeholder bg-secondary d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <i class="fas fa-universal-access text-white" style="font-size: 3rem;"></i>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge bg-secondary">Accessibility</span>
+                            </div>
+                            <h5 class="card-title fw-bold">Building Accessible Web Applications</h5>
+                            <p class="card-text text-muted flex-grow-1">Learn how to create web applications that are accessible to all users, including those with disabilities. Best practices and tools included.</p>
+                            <div class="blog-meta small text-muted mb-3">
+                                <span><i class="fas fa-user me-1"></i>Lisa Thompson</span>
+                                <span class="ms-3"><i class="fas fa-calendar me-1"></i>September 20, 2025</span>
+                            </div>
+                            <div class="blog-content collapse" id="content5">
+                                <p class="text-muted">Web accessibility ensures that your applications can be used by everyone, regardless of their abilities. Discover the essential techniques, tools, and testing methods to create inclusive digital experiences.</p>
+                            </div>
+                            <button class="btn btn-outline-secondary read-more-btn" data-bs-toggle="collapse" data-bs-target="#content5">
+                                Read More <i class="fas fa-arrow-right ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Post 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm border-0 blog-card">
+                        <div class="card-img-placeholder bg-danger d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <i class="fas fa-tachometer-alt text-white" style="font-size: 3rem;"></i>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-3">
+                                <span class="badge bg-danger">Performance</span>
+                            </div>
+                            <h5 class="card-title fw-bold">Performance Optimization Techniques</h5>
+                            <p class="card-text text-muted flex-grow-1">Discover proven techniques to optimize your website's performance, from image compression to code splitting and lazy loading.</p>
+                            <div class="blog-meta small text-muted mb-3">
+                                <span><i class="fas fa-user me-1"></i>Alex Parker</span>
+                                <span class="ms-3"><i class="fas fa-calendar me-1"></i>September 18, 2025</span>
+                            </div>
+                            <div class="blog-content collapse" id="content6">
+                                <p class="text-muted">Website performance directly impacts user experience and search rankings. Learn the most effective optimization strategies including asset optimization, caching, and modern loading techniques.</p>
+                            </div>
+                            <button class="btn btn-outline-danger read-more-btn" data-bs-toggle="collapse" data-bs-target="#content6">
+                                Read More <i class="fas fa-arrow-right ms-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-5 fw-bold text-dark mb-4">About TechBlog</h2>
+                    <p class="lead text-muted">We're passionate about sharing knowledge and helping developers stay up-to-date with the latest technologies and best practices in web development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold">TechBlog</h5>
+                    <p class="text-muted">Your go-to source for web development insights and tutorials.</p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="#about" class="text-light text-decoration-none">About</a></li>
+                        <li><a href="#blog" class="text-light text-decoration-none">Blog</a></li>
+                        <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold">Connect With Us</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3" target="_blank">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-light me-3" target="_blank">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-light me-3" target="_blank">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="#" class="text-light" target="_blank">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-muted mb-0">&copy; 2025 TechBlog. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+</body>
+</html>
